@@ -3,14 +3,16 @@
 
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Awesome Inc.</title>
   </head>
 
   <body>
     <div class="header">
 
+    <div class="header-card">  
       <div class="header-top">
-        <h3>Header Logo</h3>
+        <h3 class="header-logo">Header Logo</h3>
         <ul class="header-links">
           <li>header link one</li>
           <li>header link two</li>
@@ -19,20 +21,24 @@
       </div>    
         
       <div class="header-body">
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button>Sign up</button>
+        <div class="hero-text">
+        <h1 class="hero">This website is awesome</h1>
+        <p class="sub-hero">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+        <button class="head-butt">Sign up</button>
+        </div>
+        <img class="header-img" src="images/awesome.jpg" alt="The word awesome written in chunky, decorated text, in pencil">
       </div>
-      <!--image goes here-->
+    </div>
+
     </div>
 
     <div class="info-section">
       <h2>Some random information</h2>
       <ul class="info-imgs">
-        <li class="info-img"><!--image goes here-->this is some subtext under an illustration or image</li> 
-        <li class="info-img"><!--image goes here-->this is some subtext under an illustration or image</li>
-        <li class="info-img"><!--image goes here-->this is some subtext under an illustration or image</li>
-        <li class="info-img"><!--image goes here-->this is some subtext under an illustration or image</li>
+        <li class="info-li"><img  class="info-img" src="images/face.jpg" alt="A simple drawing of a face"><p>this is some subtext under an illustration or image</p></li> 
+        <li class="info-li"><img  class="info-img" src="images/fun.jpg" alt="A simple drawing of a pool with fun written by it"><p>this is some subtext under an illustration or image</p></li>
+        <li class="info-li"><img  class="info-img" src="images/hearts.jpg" alt="A simple drawing of a multiple hearts"><p>this is some subtext under an illustration or image</p></li>
+        <li class="info-li"><img  class="info-img" src="images/rabbit.jpg" alt="A simple drawing of a rabbit"><p>this is some subtext under an illustration or image</p></li>
       </ul>
     </div>
 
@@ -41,13 +47,12 @@
       <p class="quote-credit"> Thor, God of Thunder</p>
     </div>
 
-    <div class="signup-section">
-      <div class="signup-banner">
-        <div class="banner-text"></div>  
-          <h3>Call to action! It's time!</h3>
-          <p>Sign up for our product by clicking that button right over there!</p>
-        </div>
+    <div class="signup-banner">
+      <div class="banner-text"></div>  
+        <h3 class="signup-title">Call to action! It's time!</h3>
+        <p>Sign up for our product by clicking that button right over there!</p>
         <Button class="banner-button">Sign up</Button>
+        </div>
     </div>
 
     <div class="footer">
