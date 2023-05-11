@@ -24,6 +24,9 @@ ul {
 
 .header {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    flex: 0;
 }
 
 
@@ -32,6 +35,7 @@ ul {
     font-weight: 600;
     color: #F9FAF8;
     margin: 0px;
+    align-self: center;
 }
 
 .header-links {
@@ -48,15 +52,15 @@ ul {
 
 .header-body {
     display: flex;
-    margin: auto 0px;
+    /*margin: auto 0px;*/
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    max-width: 440px;
+    /*max-width: 440px;
     min-width: 300px;
-    padding-right: 40px;
+    padding-right: 40px;*/
 }
 
 .hero {
@@ -79,6 +83,8 @@ ul {
 
 .header-img {
     max-width: 480px;
+    max-height: auto;
+    flex-shrink: 0;
 }
 
 .info-section {
@@ -107,6 +113,17 @@ ul {
 
 .quote-section {
     background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.quote-credit {
+    justify-self: right;
+    font-weight: bolder;
+    font-size: 24px;
 }
 
 .signup-banner {
