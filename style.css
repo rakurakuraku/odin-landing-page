@@ -5,16 +5,18 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: stretch;
    margin: 0px;
 }
 
 button {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 7px 25px;
     border-radius: 8px;
-    border-width: 0px;
+    width: 117px;
+    height: 39px;
+    flex-shrink: 0;
 }
 
 ul {
@@ -27,6 +29,8 @@ ul {
     display: flex;
     flex-direction: column;
     flex: 0;
+    align-items: center;
+    width: 100vw;
 }
 
 
@@ -36,31 +40,36 @@ ul {
     color: #F9FAF8;
     margin: 0px;
     align-self: center;
+    justify-self: flex-start;
 }
 
 .header-links {
     font-size: 18px;
     color: #E5E7EB;
-    display: flex;
     gap: 20px;
+    padding-inline-start: 0px;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
+    width: 84vw;
 }
 
 .header-body {
     display: flex;
-    /*margin: auto 0px;*/
+    padding-top: 50px;
+    padding-bottom: 70px;
+    gap: 3%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 84vw;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    /*max-width: 440px;
-    min-width: 300px;
-    padding-right: 40px;*/
+    max-width: 50%;
 }
 
 .hero {
@@ -76,14 +85,14 @@ ul {
 }
 
 .head-butt {
-    width: fit-content;
-    color: #F9FAF8;
+    border: 2px solid #3882F6;
     background-color: #3882F6;
+    color: #F9FAF8;
 }
 
 .header-img {
-    max-width: 480px;
-    max-height: auto;
+    width: 460px;
+    height: 100%;
     flex-shrink: 0;
 }
 
@@ -92,11 +101,24 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+}
+
+.info-title {
+    padding-top: 25px;
 }
 
 .info-imgs {
-    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 82vw;
     justify-content: center;
+    gap: 4%;
+    padding-inline-start: 0px;
+    padding-top: 25px;
+    padding-bottom: 70px;
+    max-height: 760px;
 }
 
 .info-li {
@@ -107,35 +129,75 @@ ul {
 
 .info-img {
     border:2px solid #3882F6;
-    border-width: 2px;
     border-radius: 8px;
 }
 
 .quote-section {
     background-color: #E5E7EB;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.quote-box {
+    width: 60vw;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
 .quote {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 300;
+    color: #1F2937;
 }
 
 .quote-credit {
-    justify-self: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 18px;
+    padding-right: 7%;
 }
 
 .signup-banner {
     background-color: #3882F6;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 66vw;
+    height: fit-content;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 6px;
+    box-sizing: border-box;
+    gap: 20%;
+}
+
+.banner-title, .banner-body {
+    margin: 0px;
+    padding: 5px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
 }
 
 .banner-button {
-    border-color: #E5E7EB;
+    border: 2px solid #E5E7EB;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    align-self: center;
 }
 
-
 .footer {
+    display: flex;
+    flex-direction: row;
     background-color: #1F2937;
-    
+    justify-content: center;
+    width: 100vw;
+    color: #F9FAF8;
 }
